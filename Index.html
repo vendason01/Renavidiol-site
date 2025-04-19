@@ -2,8 +2,8 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Renavidiol - Fim das Dores</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Renavidiol - Chega de Dores Agora!</title>
 
   <!-- Pixel do Facebook -->
   <script>
@@ -25,7 +25,7 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom right, #e8f5e9, #ffffff);
+      background: linear-gradient(to bottom right, #f3f9f1, #ffffff);
       color: #222;
     }
     header {
@@ -51,7 +51,6 @@
     img.produto {
       width: 100%;
       border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
       margin: 20px 0;
     }
     iframe {
@@ -76,17 +75,24 @@
       background: #0f9e56;
     }
     .highlight {
-      background: #fbe9e7;
+      background: #fce4ec;
       padding: 15px;
       border-radius: 8px;
       margin: 20px 0;
       font-weight: 600;
-      color: #d84315;
+      color: #c2185b;
     }
-    .garantia {
+    .garantia, .depoimentos, footer {
       font-size: 14px;
-      margin-top: 20px;
       color: #555;
+      margin-top: 30px;
+    }
+    .depoimentos div {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 10px;
+      margin: 10px auto;
+      max-width: 500px;
     }
     footer {
       margin-top: 40px;
@@ -94,6 +100,12 @@
       color: white;
       padding: 20px;
       font-size: 14px;
+    }
+    .contador {
+      font-size: 18px;
+      color: red;
+      margin-top: 10px;
+      font-weight: bold;
     }
     .whatsapp {
       position: fixed;
@@ -105,30 +117,54 @@
       width: 60px;
     }
   </style>
+  <script>
+    function startCountdown(duration, display) {
+      let timer = duration, minutes, seconds;
+      setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        display.textContent = minutes + ":" + seconds;
+        if (--timer < 0) timer = duration;
+      }, 1000);
+    }
+    window.onload = function () {
+      const display = document.querySelector('#countdown');
+      startCountdown(900, display);
+    };
+  </script>
 </head>
 <body>
 
 <header>
-  <h1>Oferta Especial do Renavidiol!</h1>
-  <p>Combata suas dores articulares com um suplemento 100% natural</p>
+  <h1>Acabe com suas dores naturalmente com Renavidiol!</h1>
+  <p>Solução eficaz para articulações, coluna e músculos</p>
 </header>
 
 <div class="container">
   <img class="produto" src="https://www.revendadireta.com.br/arquivos/produtos/renavidiol.jpg" alt="Renavidiol">
+  <iframe src="https://www.youtube.com/embed/OXlBX8ah-YE" frameborder="0" allowfullscreen></iframe>
 
-  <p>Renavidiol é o aliado natural para aliviar dores crônicas nas articulações, joelhos, coluna e mais. Com ingredientes aprovados pela Anvisa e ação anti-inflamatória.</p>
-
-  <iframe src="https://www.youtube.com/embed/OXlBX8ah-YE" title="Renavidiol" frameborder="0" allowfullscreen></iframe>
-
-  <div class="highlight">Desconto por tempo limitado. Aproveite agora!</div>
+  <div class="highlight">Promoção válida por tempo limitado!</div>
+  <div class="contador">Tempo restante da oferta: <span id="countdown">15:00</span></div>
 
   <a class="btn" href="https://ev.braip.com/campanhas/cpa/cam69dxzj" target="_blank">COMPRAR 1 FRASCO</a>
   <a class="btn" href="https://ev.braip.com/campanhas/cpa/cam91vr9o" target="_blank">COMPRAR 2 FRASCOS</a>
   <a class="btn" href="https://ev.braip.com/campanhas/cpa/cam0mgjyk" target="_blank">COMPRAR 12 FRASCOS (MELHOR OFERTA)</a>
-
   <a class="btn" href="https://wa.me/5521971213397" target="_blank">TIRAR DÚVIDAS NO WHATSAPP</a>
 
-  <div class="garantia">Garantia de 30 dias | Produto 100% Natural | Resultados Reais</div>
+  <div class="garantia">
+    <img src="https://i.imgur.com/Vw5z2UD.png" alt="Garantia" width="150"><br>
+    Garantia de 30 dias | Produto 100% Natural | Resultados Comprovados
+  </div>
+
+  <div class="depoimentos">
+    <h3>Depoimentos de Clientes</h3>
+    <div>"Melhorou completamente minhas dores no joelho!" — <strong>Ana R.</strong></div>
+    <div>"Não vivo mais sem! Realmente funciona." — <strong>José M.</strong></div>
+    <div>"Produto top, entregaram rapidinho e funciona." — <strong>Marcos S.</strong></div>
+  </div>
 </div>
 
 <div class="whatsapp">
@@ -138,8 +174,9 @@
 </div>
 
 <footer>
-  © 2024 Renavidiol. Todos os direitos reservados.
+  © 2024 Renavidiol. Todos os direitos reservados.<br>
+  <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a>
 </footer>
 
 </body>
-</html>
+  </html>
