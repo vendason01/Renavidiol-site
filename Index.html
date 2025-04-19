@@ -2,15 +2,14 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Renavidiol Oficial</title>
 
   <!-- Pixel do Facebook -->
   <script>
     !function(f,b,e,v,n,t,s){
       if(f.fbq)return;n=f.fbq=function(){
-        n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)};
         if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
         n.queue=[];t=b.createElement(e);t.async=!0;
         t.src=v;s=b.getElementsByTagName(e)[0];
@@ -20,40 +19,64 @@
     fbq('track', 'PageView');
   </script>
   <noscript>
-    <img height="1" width="1" 
-    src="https://www.facebook.com/tr?id=1063880509132238&ev=PageView&noscript=1"/>
+    <img height="1" width="1" src="https://www.facebook.com/tr?id=1063880509132238&ev=PageView&noscript=1"/>
   </noscript>
 
+  <!-- Fonte estilo JSEN -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
     body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background-color: #f4f4f4;
-      text-align: center;
-      color: #333;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #222;
     }
     .container {
+      max-width: 460px;
+      margin: 0 auto;
       padding: 20px;
-      max-width: 600px;
-      margin: auto;
-      background: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      margin-top: 30px;
+      text-align: center;
+    }
+    img {
+      width: 100%;
       border-radius: 10px;
+      margin-bottom: 20px;
     }
-    h1 { color: #0275d8; }
-    a.button {
+    h1 {
+      font-size: 24px;
+      color: #0d3c61;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .btn {
       display: block;
-      background: #28a745;
+      background: #11AD5E;
       color: #fff;
-      padding: 15px;
-      margin: 15px 0;
-      border-radius: 5px;
+      padding: 14px;
       text-decoration: none;
-      font-weight: bold;
+      border-radius: 10px;
+      margin: 15px 0;
+      font-weight: 600;
+      font-size: 16px;
+      transition: background 0.3s ease;
     }
-    a.button:hover {
-      background: #218838;
+    .btn:hover {
+      background: #0f9e56;
+    }
+    iframe {
+      width: 100%;
+      height: 220px;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
     .whatsapp {
       position: fixed;
@@ -65,20 +88,31 @@
       width: 60px;
       height: 60px;
     }
+    .garantia {
+      font-size: 14px;
+      color: #555;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
+
   <div class="container">
-    <h1>Chega de dores com Renavidiol!</h1>
-    <p>Produto natural, aprovado pela Anvisa e com resultados comprovados.</p>
-    <p>Escolha sua melhor oferta:</p>
+    <img src="https://www.revendadireta.com.br/arquivos/produtos/renavidiol.jpg" alt="Renavidiol"/>
+    <h1>Chega de dores articulares com Renavidiol!</h1>
+    <p>Renavidiol é um suplemento 100% natural com ingredientes potentes que atuam diretamente na inflamação e regeneração das articulações, coluna e músculos.</p>
 
-    <a class="button" href="https://ev.braip.com/campanhas/cpa/cam69dxzj" target="_blank">1 Frasco</a>
-    <a class="button" href="https://ev.braip.com/campanhas/cpa/cam91vr9o" target="_blank">2 Frascos</a>
-    <a class="button" href="https://ev.braip.com/campanhas/cpa/cam0mgjyk" target="_blank">12 Frascos (Melhor Oferta)</a>
+    <iframe src="https://www.youtube.com/embed/OXlBX8ah-YE" title="Renavidiol" frameborder="0" allowfullscreen></iframe>
 
-    <p>Fale diretamente comigo pelo WhatsApp:</p>
-    <a class="button" href="https://wa.me/5521971213397" target="_blank">Chamar no WhatsApp</a>
+    <a class="btn" href="https://ev.braip.com/campanhas/cpa/cam69dxzj" target="_blank">COMPRAR 1 FRASCO</a>
+    <a class="btn" href="https://ev.braip.com/campanhas/cpa/cam91vr9o" target="_blank">COMPRAR 2 FRASCOS</a>
+    <a class="btn" href="https://ev.braip.com/campanhas/cpa/cam0mgjyk" target="_blank">COMPRAR 12 FRASCOS (MELHOR OFERTA)</a>
+
+    <a class="btn" href="https://wa.me/5521971213397" target="_blank">FALAR NO WHATSAPP</a>
+
+    <div class="garantia">
+      Produto aprovado pela Anvisa | Garantia de satisfação | Envio para todo o Brasil
+    </div>
   </div>
 
   <div class="whatsapp">
@@ -86,5 +120,6 @@
       <img src="https://imagepng.org/wp-content/uploads/2017/08/whatsapp-icone-1.png" alt="WhatsApp">
     </a>
   </div>
+
 </body>
-</html>
+      </html>
