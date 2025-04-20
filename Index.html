@@ -19,107 +19,95 @@
   </noscript>  <!-- Pixel da Brip -->  <script src="https://scripts.braip.com.br/tracking.js"></script>  <script>
     BraipTracking.init("SEU_PIXEL_BRIP");
   </script>  <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: 'Arial', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #fff;
+      font-family: 'Arial', sans-serif;
+      background-color: #fff;
       color: #333;
     }
-    .hero {
-      background: url('https://renavidiol.com.br/wp-content/uploads/2024/10/bg-banner-top.webp') no-repeat center center;
-      background-size: cover;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .hero img {
-      max-width: 100%;
-      height: auto;
-    }
-    .container {
-      max-width: 960px;
-      margin: auto;
+    header {
+      background: linear-gradient(90deg, #730707 0%, #c4170c 100%);
       padding: 20px;
-    }
-    h1, h2 {
-      color: #c4170c;
-    }
-    .button-group {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      margin-top: 20px;
-      align-items: center;
-    }
-    .button-group a {
-      background: #1E9F41;
-      color: #fff;
-      padding: 16px 30px;
-      border-radius: 10px;
-      font-size: 18px;
-      font-weight: bold;
-      text-decoration: none;
-      max-width: 300px;
-      width: 100%;
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    .product-img {
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      margin: 20px 0;
+    header img {
+      max-width: 180px;
     }
     .section {
-      margin: 40px 0;
+      padding: 40px 20px;
+      text-align: center;
     }
-    ul {
-      list-style: disc;
-      padding-left: 20px;
+    .section.bg {
+      background-color: #f9f9f9;
     }
-    footer {
-      background: #f2f2f2;
+    .section h2 {
+      color: #c4170c;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .section p {
+      font-size: 18px;
+      max-width: 800px;
+      margin: 0 auto 20px;
+    }
+    .section img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+    .btn {
+      background: #1e9f41;
+      color: #fff;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-size: 18px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .btn:hover {
+      background: #158533;
+    }
+    .footer {
+      background-color: #f1f1f1;
       text-align: center;
       padding: 20px;
       font-size: 14px;
-      color: #777;
+      color: #555;
     }
   </style></head>
 <body>
-  <div class="hero">
-    <img src="https://renavidiol.com.br/wp-content/uploads/2024/10/novoadv2.webp" alt="Renavidiol">
-  </div>  <div class="container">
-    <div class="section">
-      <h1>O Rejuvenescedor Natural com CBA</h1>
-      <p>O Renavidiol é um sérum facial com fórmula exclusiva à base de <strong>Cannabinoid Active System™</strong>, Colágeno Verisol® e Ácido Hialurônico que promove a renovação celular da pele.</p>
-      <img src="https://renavidiol.com.br/wp-content/uploads/2024/10/dropbottle.png" alt="Produto" class="product-img">
-    </div><div class="section">
-  <h2>Benefícios Comprovados</h2>
-  <ul>
-    <li>Reduz rugas e linhas de expressão</li>
-    <li>Promove firmeza e elasticidade</li>
-    <li>Hidratação profunda da pele</li>
-    <li>Reversão de sinais de envelhecimento</li>
-    <li>Ação regeneradora e antioxidante</li>
-  </ul>
-</div>
-
-<div class="section">
-  <h2>Escolha sua oferta:</h2>
-  <div class="button-group">
-    <a href="https://ev.braip.com/campanhas/cpa/cam69dxzj" target="_blank">Comprar 1 Frasco</a>
-    <a href="https://ev.braip.com/campanhas/cpa/cam91vr9o" target="_blank">Comprar 3 Frascos</a>
-    <a href="https://ev.braip.com/campanhas/cpa/cam0mgjyk" target="_blank">Comprar 12 Frascos</a>
-  </div>
-</div>
-
-<div class="section">
-  <h2>Antes e Depois</h2>
-  <img src="https://renavidiol.com.br/wp-content/uploads/2024/10/5vbiOJLT_mmY.webp" alt="Antes e depois" class="product-img">
-</div>
-
-  </div>  <footer>
-    © 2025 Renavidiol - Todos os direitos reservados.
+  <header>
+    <img src="https://renavidiol.com.br/wp-content/uploads/2024/10/renavidiol-logo.png" alt="Renavidiol">
+  </header>  <div class="section">
+    <img src="https://renavidiol.com.br/wp-content/uploads/2024/10/novoadv2.webp" alt="Banner principal">
+  </div>  <div class="section bg">
+    <h2>Chegou ao Brasil a fórmula testada e aprovada pelo FDA!</h2>
+    <p>Com CBA (Cannabinoid Active System™), o Renavidiol rejuvenesce sua pele de forma natural e segura.</p>
+    <img src="https://renavidiol.com.br/wp-content/uploads/2024/10/dropbottle.png" alt="Produto Renavidiol">
+    <a href="https://ev.braip.com/campanhas/cpa/cam91vr9o" class="btn" target="_blank">COMPRAR COM DESCONTO</a>
+  </div>  <div class="section">
+    <h2>Benefícios</h2>
+    <p>Reduz rugas, hidrata profundamente, estimula colágeno e promove a firmeza da pele com ingredientes como Ácido Hialurônico, Retinol e Colágeno Verisol®.</p>
+    <img src="https://renavidiol.com.br/wp-content/uploads/2024/10/composicao.webp" alt="Composição">
+  </div>  <div class="section bg">
+    <h2>Antes e Depois</h2>
+    <img src="https://renavidiol.com.br/wp-content/uploads/2024/10/5vbiOJLT_mmY.webp" alt="Antes e depois">
+  </div>  <div class="section">
+    <h2>Escolha sua oferta:</h2>
+    <a href="https://ev.braip.com/campanhas/cpa/cam69dxzj" class="btn" target="_blank">1 FRASCO</a>
+    <br><br>
+    <a href="https://ev.braip.com/campanhas/cpa/cam91vr9o" class="btn" target="_blank">3 FRASCOS</a>
+    <br><br>
+    <a href="https://ev.braip.com/campanhas/cpa/cam0mgjyk" class="btn" target="_blank">12 FRASCOS</a>
+    <br><br>
+    <img src="https://renavidiol.com.br/wp-content/uploads/2024/10/5un.png" alt="Oferta desconto">
+  </div>  <footer class="footer">
+    © 2025 Renavidiol - Todos os direitos reservados
   </footer>
 </body>
 </html>
