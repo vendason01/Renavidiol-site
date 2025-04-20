@@ -1,182 +1,103 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html><html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Renavidiol - Chega de Dores Agora!</title>
-
-  <!-- Pixel do Facebook -->
-  <script>
-    !function(f,b,e,v,n,t,s){
-      if(f.fbq)return;n=f.fbq=function(){
-        n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1063880509132238');
-    fbq('track', 'PageView');
-  </script>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renavidiol CBA</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
+      font-family: 'Open Sans', sans-serif;
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom right, #f3f9f1, #ffffff);
-      color: #222;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
     }
     header {
-      background-color: #11AD5E;
+      background-color: #C4170C;
+      padding: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       color: white;
-      padding: 30px 20px;
-      text-align: center;
     }
     header h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 16px;
+      font-size: 36px;
       margin: 0;
     }
-    .container {
-      max-width: 700px;
-      margin: auto;
-      padding: 20px;
-      text-align: center;
+    .icon {
+      font-size: 32px;
     }
-    img.produto {
-      width: 100%;
-      border-radius: 12px;
-      margin: 20px 0;
+    .content {
+      padding: 24px;
     }
-    iframe {
-      width: 100%;
-      height: 250px;
-      border-radius: 12px;
-      margin-bottom: 20px;
+    h2 {
+      color: #C4170C;
+      font-size: 28px;
+    }
+    .highlight {
+      color: #ff0000;
+      font-weight: bold;
     }
     .btn {
       display: block;
-      background: #11AD5E;
+      width: 90%;
+      max-width: 400px;
+      margin: 30px auto;
+      background-color: #1E9F41;
       color: white;
-      font-size: 18px;
-      font-weight: bold;
-      padding: 16px;
-      border-radius: 10px;
-      text-decoration: none;
-      margin: 15px 0;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background: #0f9e56;
-    }
-    .highlight {
-      background: #fce4ec;
-      padding: 15px;
-      border-radius: 8px;
-      margin: 20px 0;
-      font-weight: 600;
-      color: #c2185b;
-    }
-    .garantia, .depoimentos, footer {
-      font-size: 14px;
-      color: #555;
-      margin-top: 30px;
-    }
-    .depoimentos div {
-      background: #f5f5f5;
-      border-radius: 8px;
-      padding: 10px;
-      margin: 10px auto;
-      max-width: 500px;
-    }
-    footer {
-      margin-top: 40px;
-      background: #11AD5E;
-      color: white;
+      text-align: center;
       padding: 20px;
-      font-size: 14px;
-    }
-    .contador {
-      font-size: 18px;
-      color: red;
-      margin-top: 10px;
+      font-size: 20px;
       font-weight: bold;
+      text-decoration: none;
+      border-bottom: 2px solid #951414;
     }
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 999;
+    .image {
+      width: 100%;
+      max-width: 700px;
+      display: block;
+      margin: 20px auto;
     }
-    .whatsapp img {
-      width: 60px;
+    .disclaimer {
+      background: #FFEAEA;
+      border: 1px dotted #FF1313;
+      padding: 20px;
+      margin: 20px 0;
+      text-align: center;
+      font-weight: bold;
     }
   </style>
-  <script>
-    function startCountdown(duration, display) {
-      let timer = duration, minutes, seconds;
-      setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-        display.textContent = minutes + ":" + seconds;
-        if (--timer < 0) timer = duration;
-      }, 1000);
-    }
-    window.onload = function () {
-      const display = document.querySelector('#countdown');
-      startCountdown(900, display);
-    };
-  </script>
 </head>
 <body>
+  <header>
+    <i class="fas fa-bars icon"></i>
+    <h1>Renavidiol CBA</h1>
+    <i class="fas fa-search icon"></i>
+  </header>  <div class="content">
+    <h2>Cannabinoid Active System™ (CBA)</h2>
+    <p>Combate as rugas, promove uma pele jovem, sem marcas de expressão e pés de galinha. Agora no Brasil!</p>
+    <img src="https://renavidiol.com.br/wp-content/uploads/2024/10/novoadv2.webp" alt="Produto" class="image">
+    <p class="highlight">Aprovado pela Anvisa. Resultados comprovados em 90 dias ou seu dinheiro de volta!</p><h2>Depoimentos Reais</h2>
+<p>Lúcia Hoffmann, 56 anos, participou do Desafio de 150 dias: "Meu rosto rejuvenesceu 10 anos!"</p>
+<img src="https://renavidiol.com.br/wp-content/uploads/2024/10/5vbiOJLT_mmY.webp" class="image" alt="Antes e depois">
 
-<header>
-  <h1>Acabe com suas dores naturalmente com Renavidiol!</h1>
-  <p>Solução eficaz para articulações, coluna e músculos</p>
-</header>
+<div class="disclaimer">Descontos de até 60% ainda disponíveis</div>
 
-<div class="container">
-  <img class="produto" src="https://www.revendadireta.com.br/arquivos/produtos/renavidiol.jpg" alt="Renavidiol">
-  <iframe src="https://www.youtube.com/embed/OXlBX8ah-YE" frameborder="0" allowfullscreen></iframe>
+<a href="https://renavidiol.com.br/" class="btn">EU QUERO O RENAVIDIOL CBA AGORA</a>
+<img src="https://renavidiol.com.br/wp-content/uploads/2024/10/5un.png" alt="Desconto" class="image">
 
-  <div class="highlight">Promoção válida por tempo limitado!</div>
-  <div class="contador">Tempo restante da oferta: <span id="countdown">15:00</span></div>
+<h2>Composição do Produto</h2>
+<p><strong>CBA:</strong> Atua nos receptores endocanabinoides, regenerando a pele.<br>
+<strong>Ácido Hialurônico:</strong> Hidrata e firma.<br>
+<strong>Colágeno Verisol®:</strong> Reforça elasticidade.<br>
+<strong>Retinol:</strong> Estimula a renovação celular.</p>
 
-  <a class="btn" href="https://ev.braip.com/campanhas/cpa/cam69dxzj" target="_blank">COMPRAR 1 FRASCO</a>
-  <a class="btn" href="https://ev.braip.com/campanhas/cpa/cam91vr9o" target="_blank">COMPRAR 2 FRASCOS</a>
-  <a class="btn" href="https://ev.braip.com/campanhas/cpa/cam0mgjyk" target="_blank">COMPRAR 12 FRASCOS (MELHOR OFERTA)</a>
-  <a class="btn" href="https://wa.me/5521971213397" target="_blank">TIRAR DÚVIDAS NO WHATSAPP</a>
+<h2>Garantia de 90 dias</h2>
+<p>Ao adquirir 3 frascos ou mais, você recebe garantia total de satisfação ou reembolso completo.</p>
 
-  <div class="garantia">
-    <img src="https://i.imgur.com/Vw5z2UD.png" alt="Garantia" width="150"><br>
-    Garantia de 30 dias | Produto 100% Natural | Resultados Comprovados
+<h2>Onde comprar?</h2>
+<p>Só no <a href="https://renavidiol.com.br/" target="_blank"><strong>site oficial</strong></a>. Evite fraudes. Oferta exclusiva por tempo limitado.</p>
+
   </div>
-
-  <div class="depoimentos">
-    <h3>Depoimentos de Clientes</h3>
-    <div>"Melhorou completamente minhas dores no joelho!" — <strong>Ana R.</strong></div>
-    <div>"Não vivo mais sem! Realmente funciona." — <strong>José M.</strong></div>
-    <div>"Produto top, entregaram rapidinho e funciona." — <strong>Marcos S.</strong></div>
-  </div>
-</div>
-
-<div class="whatsapp">
-  <a href="https://wa.me/5521971213397" target="_blank">
-    <img src="https://imagepng.org/wp-content/uploads/2017/08/whatsapp-icone-1.png" alt="WhatsApp">
-  </a>
-</div>
-
-<footer>
-  © 2024 Renavidiol. Todos os direitos reservados.<br>
-  <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a>
-</footer>
-
 </body>
   </html>
