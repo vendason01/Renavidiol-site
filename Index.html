@@ -25,89 +25,183 @@
     body {
       margin: 0;
       font-family: 'Arial', sans-serif;
-      background-color: #fff;
-      color: #333;
+      background: linear-gradient(180deg, #730707, #c4170c);
+      color: #fff;
+      scroll-behavior: smooth;
     }
     header {
-      background: linear-gradient(90deg, #730707 0%, #c4170c 100%);
-      padding: 20px;
+      padding: 40px 20px 20px;
       text-align: center;
+      background: transparent;
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: fadeInUp 1s ease-out forwards;
     }
-    header img {
-      max-width: 180px;
+    header h1 {
+      font-size: 32px;
+      margin: 0 0 10px;
+    }
+    .hero, .section {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease;
+    }
+    .show {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+    .hero {
+      background: #fff;
+      color: #c4170c;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .hero h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #444;
     }
     .section {
+      background: #fff;
+      color: #333;
       padding: 40px 20px;
       text-align: center;
     }
     .section.bg {
-      background-color: #f9f9f9;
-    }
-    .section h2 {
-      color: #c4170c;
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-    .section p {
-      font-size: 18px;
-      max-width: 800px;
-      margin: 0 auto 20px;
+      background: #f9f9f9;
     }
     .section img {
       max-width: 100%;
-      height: auto;
-      margin: 20px 0;
       border-radius: 10px;
+      margin: 20px 0;
+      transition: transform 0.4s ease;
+    }
+    .section img:hover {
+      transform: scale(1.03);
     }
     .btn {
       background: #1e9f41;
       color: #fff;
-      padding: 15px 25px;
-      border-radius: 8px;
+      padding: 16px 32px;
       font-size: 18px;
+      border-radius: 10px;
       text-decoration: none;
       display: inline-block;
       margin-top: 20px;
+      transition: all 0.3s ease;
     }
     .btn:hover {
+      transform: scale(1.05);
       background: #158533;
     }
-    .footer {
-      background-color: #f1f1f1;
+    .contador {
+      font-size: 24px;
+      font-weight: bold;
+      color: #c4170c;
+      margin-top: 20px;
+    }
+    .depoimentos {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .depoimento {
+      background: #fff;
+      color: #333;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #222;
+      color: #ccc;
       text-align: center;
       padding: 20px;
       font-size: 14px;
-      color: #555;
+    }
+    footer a {
+      color: #ccc;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
   </style></head>
 <body>
   <header>
-    <img src="https://renavidiol.com.br/wp-content/uploads/2024/10/renavidiol-logo.png" alt="Renavidiol">
-  </header>  <div class="section">
-    <img src="https://renavidiol.com.br/wp-content/uploads/2024/10/novoadv2.webp" alt="Banner principal">
-  </div>  <div class="section bg">
-    <h2>Chegou ao Brasil a fórmula testada e aprovada pelo FDA!</h2>
-    <p>Com CBA (Cannabinoid Active System™), o Renavidiol rejuvenesce sua pele de forma natural e segura.</p>
-    <img src="https://renavidiol.com.br/wp-content/uploads/2024/10/dropbottle.png" alt="Produto Renavidiol">
-    <a href="https://ev.braip.com/campanhas/cpa/cam91vr9o" class="btn" target="_blank">COMPRAR COM DESCONTO</a>
+    <h1>Renavidiol CBA</h1>
+    <p>Rejuvenesça sua pele com a fórmula testada e aprovada pelo FDA</p>
+  </header>  <div class="hero"> <!-- aparecerá com efeito -->
+    <h2>Fórmula natural que reduz rugas em até 90 dias</h2>
+    <p>Composto com CBA, Ácido Hialurônico e Colágeno Verisol®</p>
+    <div class="contador" id="contador">Oferta termina em: 00:00:00</div>
   </div>  <div class="section">
-    <h2>Benefícios</h2>
-    <p>Reduz rugas, hidrata profundamente, estimula colágeno e promove a firmeza da pele com ingredientes como Ácido Hialurônico, Retinol e Colágeno Verisol®.</p>
-    <img src="https://renavidiol.com.br/wp-content/uploads/2024/10/composicao.webp" alt="Composição">
+    <h2>Escolha sua oferta</h2>
+    <a class="btn" href="https://ev.braip.com/campanhas/cpa/cam69dxzj" target="_blank">1 Frasco</a><br><br>
+    <a class="btn" href="https://ev.braip.com/campanhas/cpa/cam91vr9o" target="_blank">3 Frascos (Mais vendido)</a><br><br>
+    <a class="btn" href="https://ev.braip.com/campanhas/cpa/cam0mgjyk" target="_blank">12 Frascos (Desconto Máximo)</a>
+    <img src="https://renavidiol.com.br/wp-content/uploads/2024/10/5un.png" alt="Oferta">
   </div>  <div class="section bg">
-    <h2>Antes e Depois</h2>
-    <img src="https://renavidiol.com.br/wp-content/uploads/2024/10/5vbiOJLT_mmY.webp" alt="Antes e depois">
+    <h2>Selo de Garantia</h2>
+    <img src="https://renavidiol.com.br/wp-content/uploads/2024/10/selo90dias.png" alt="Selo de Garantia">
+    <p>Garantia de 90 dias. Se não gostar, devolvemos 100% do seu dinheiro.</p>
   </div>  <div class="section">
-    <h2>Escolha sua oferta:</h2>
-    <a href="https://ev.braip.com/campanhas/cpa/cam69dxzj" class="btn" target="_blank">1 FRASCO</a>
-    <br><br>
-    <a href="https://ev.braip.com/campanhas/cpa/cam91vr9o" class="btn" target="_blank">3 FRASCOS</a>
-    <br><br>
-    <a href="https://ev.braip.com/campanhas/cpa/cam0mgjyk" class="btn" target="_blank">12 FRASCOS</a>
-    <br><br>
-    <img src="https://renavidiol.com.br/wp-content/uploads/2024/10/5un.png" alt="Oferta desconto">
-  </div>  <footer class="footer">
-    © 2025 Renavidiol - Todos os direitos reservados
-  </footer>
-</body>
-</html>
+    <h2>Depoimentos Reais</h2>
+    <div class="depoimentos">
+      <div class="depoimento">
+        "Minha pele nunca esteve tão firme e hidratada. Recomendo!"<br>
+        <strong>– Carla, 42 anos</strong>
+      </div>
+      <div class="depoimento">
+        "Usei por 30 dias e já percebi a diferença. Produto incrível!"<br>
+        <strong>– Vanessa, 49 anos</strong>
+      </div>
+      <div class="depoimento">
+        "Nunca gostei de cremes, mas o Renavidiol mudou minha rotina!"<br>
+        <strong>– Lúcia, 56 anos</strong>
+      </div>
+    </div>
+  </div>  <footer>
+    <p>© 2025 Renavidiol. Todos os direitos reservados.</p>
+    <a href="#">Política de Privacidade</a> |
+    <a href="#">Termos de Uso</a> |
+    <a href="#">Contato</a>
+  </footer>  <script>
+    function iniciarContador() {
+      const destino = new Date().getTime() + 7200000; // 2 horas
+      const x = setInterval(() => {
+        const agora = new Date().getTime();
+        const distancia = destino - agora;
+        const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+        document.getElementById("contador").innerHTML = `Oferta termina em: ${horas.toString().padStart(2, '0')}:${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
+        if (distancia < 0) {
+          clearInterval(x);
+          document.getElementById("contador").innerHTML = "Oferta encerrada";
+        }
+      }, 1000);
+    }
+    iniciarContador();
+
+    // Scroll reveal
+    const sections = document.querySelectorAll('.hero, .section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+    sections.forEach(section => observer.observe(section));
+  </script></body>
+  </html>
