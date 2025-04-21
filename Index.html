@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecionando para o WhatsApp</title>
+    <title>Fale com Renavidiol no WhatsApp</title>
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -22,58 +21,67 @@
     /></noscript>
     <style>
         body {
-            font-family: sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f8f5; /* Um verde bem claro */
         }
 
         .container {
             background-color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
             text-align: center;
+            max-width: 400px;
+            width: 90%;
         }
 
-        img {
-            max-width: 200px;
+        .product-image {
+            max-width: 150px;
             height: auto;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        .redirect-message {
+            font-size: 18px;
+            color: #333;
             margin-bottom: 20px;
         }
 
-        p {
-            margin-bottom: 15px;
-            font-size: 16px;
-            color: #555;
-        }
-
-        .whatsapp-link {
+        .whatsapp-button {
             display: inline-block;
-            padding: 12px 24px;
-            background-color: #25D366; /* Cor verde do WhatsApp */
+            padding: 15px 30px;
+            background-color: #25D366; /* Cor verde vibrante do WhatsApp */
             color: #fff;
             text-decoration: none;
-            border-radius: 6px;
+            border-radius: 8px;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 20px;
+            transition: background-color 0.3s ease;
         }
 
-        .whatsapp-link:hover {
+        .whatsapp-button:hover {
             background-color: #128C7E;
+        }
+
+        .tagline {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 25px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="https://i.ibb.co/4gS4F0v/renavidiol-cba-serum.png" alt="Renavidiol CBA+ Serum">
-        <p>Você será redirecionado para o WhatsApp em alguns segundos...</p>
-        <p>Descubra o segredo para ter uma pele radiante e jovem! Fale conosco:</p>
-        <a href="https://wa.me/5521971213397?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Renavidiol%20e%20gostaria%20de%20saber%20mais" class="whatsapp-link" target="_blank" rel="noopener noreferrer">
+        <p class="redirect-message">Você será redirecionado para o WhatsApp em alguns segundos...</p>
+        <p class="tagline">Descubra o segredo para ter uma pele radiante e jovem! Fale conosco:</p>
+        <a href="https://wa.me/5521971213397?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Renavidiol%20e%20gostaria%20de%20saber%20mais" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
             Falar no WhatsApp
         </a>
     </div>
@@ -81,7 +89,3 @@
     <script>
         setTimeout(function() {
             window.location.href = "https://wa.me/5521971213397?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Renavidiol%20e%20gostaria%20de%20saber%20mais";
-        }, 3000); // Redireciona após 3 segundos (3000 milissegundos)
-    </script>
-</body>
-</html>
