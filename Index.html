@@ -3,92 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pele Radiante com Renavidiol</title>
+  <title>Renavidiol - Sua Pele Mais Jovem</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #f6f8f9;
-      color: #333;
-      padding: 0;
       margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+      background-size: 200% 200%;
+      animation: bgMove 10s ease infinite;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      text-align: center;
+      min-height: 100vh;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     .container {
-      max-width: 500px;
-      margin-top: 60px;
-      background: #ffffff;
+      background: white;
       padding: 40px 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      max-width: 420px;
+      width: 90%;
     }
 
     h1 {
+      font-size: 26px;
       color: #2e7d32;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 17px;
+      color: #444;
     }
 
     ul {
       list-style: none;
       padding: 0;
+      margin: 25px 0;
       text-align: left;
-      margin-top: 20px;
     }
 
     ul li {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
+      padding-left: 24px;
+      position: relative;
       font-size: 16px;
+      color: #555;
     }
 
     ul li::before {
-      content: "✔️";
-      margin-right: 10px;
-      color: #4CAF50;
+      content: "✔";
+      color: #4caf50;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 30px;
-      padding: 16px 30px;
-      font-size: 18px;
+      background: linear-gradient(135deg, #43a047, #66bb6a);
       color: #fff;
-      background-color: #43a047;
-      border: none;
-      border-radius: 8px;
+      padding: 16px 28px;
+      font-size: 18px;
+      border-radius: 10px;
       text-decoration: none;
-      transition: background 0.3s ease;
+      box-shadow: 0 4px 14px rgba(67, 160, 71, 0.3);
+      transition: 0.3s ease;
     }
 
     .btn:hover {
-      background-color: #2e7d32;
+      background: linear-gradient(135deg, #388e3c, #4caf50);
+      box-shadow: 0 6px 20px rgba(56, 142, 60, 0.4);
+      transform: scale(1.05);
     }
 
     .footer {
+      font-size: 13px;
+      color: #777;
       margin-top: 30px;
-      font-size: 14px;
-      color: #888;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Pele Radiante e Jovem?</h1>
-    <p>Descubra os benefícios do Renavidiol:</p>
+    <p>Fale com a gente e descubra o segredo do Renavidiol!</p>
     <ul>
       <li>Hidratação profunda e duradoura</li>
-      <li>Fórmula inovadora e natural</li>
-      <li>Redução de linhas finas e rugas</li>
-      <li>Brilho e firmeza visíveis</li>
+      <li>Fórmula natural e inovadora</li>
+      <li>Rejuvenescimento visível</li>
       <li>Resultados que você vai amar</li>
     </ul>
-    <a class="btn" href="https://wa.me/5521971213397?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais" target="_blank">
+    <a href="https://wa.me/5521971213397?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais" class="btn" target="_blank">
       Olá! Gostaria de saber mais
     </a>
     <div class="footer">
-      Página 100% segura • Você será redirecionado
+      Você será redirecionado ao WhatsApp
     </div>
   </div>
 </body>
